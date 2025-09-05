@@ -1,6 +1,14 @@
 [build]
 builder = "nixpacks"
-buildCommand = "mvn clean package -DskipTests"
+
+[build.env]
+JAVA_VERSION = "17"
+
+[phases.setup]
+nixPkgs = ["openjdk17", "maven"]
+
+[phases.build]
+cmds = ["mvn clean package -DskipTests"]
 
 [start]
-startCommand = "java -jar target/*.jar"
+cmd = "java -jar target/*.jar"

@@ -1,0 +1,13 @@
+package com.eshi.notes.Notes_api;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class NotesApiApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

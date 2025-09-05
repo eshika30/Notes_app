@@ -1,2 +1,3 @@
-web: java -jar target/*.jar
+web: ./mvnw clean package -DskipTests && java -jar target/*.jar
+
 
